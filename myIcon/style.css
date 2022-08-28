@@ -1,0 +1,179 @@
+/* my css */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.contener {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #e7e7e7;
+}
+ul {
+  padding: 0 10px;
+  justify-content: center;
+  row-gap: 60px;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+}
+ul li {
+  list-style: none;
+  margin: 0 40px;
+}
+
+ul li .fab,
+ul li .fa {
+  font-size: 40px;
+  color: #262626;
+  line-height: 80px;
+  transition: 0.5s;
+}
+ul li a {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-image: linear-gradient(
+    -145deg,
+    rgb(201 201 201),
+    rgb(77 195 229 / 0%)
+  );
+  text-align: center;
+  transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0, 0);
+  transition: 0.5s;
+  box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
+}
+ul li a::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #b1b1b1;
+  transition: 0.5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+ul li a::after {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: -11px;
+  height: 20px;
+  width: 100%;
+  background: #b1b1b1;
+  transition: 0.5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+ul li a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg)
+    translate(20px, -20px);
+  box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+ul li:hover .fab {
+  color: #fff;
+}
+ul li a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg)
+    translate(20px, -20px);
+  box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+ul li:hover .fab {
+  color: #fff;
+}
+ul li a:hover {
+  transform: perspective(1000px) rotate(-30deg) skew(25deg)
+    translate(20px, -20px);
+  box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+}
+ul li:nth-child(1) i {
+  transform: rotate(130deg);
+  font-size: 37px;
+}
+ul li:hover i {
+  color: white;
+}
+ul li:hover:nth-child(1) a {
+  background: #24a249;
+}
+
+ul li:hover:nth-child(1) a:before {
+  background: #37b85d;
+}
+ul li:hover:nth-child(1) a:after {
+  background: #1f893f;
+}
+
+ul li:hover:nth-child(2) a {
+  background: #c96818;
+}
+
+ul li:hover:nth-child(2) a:before {
+  background: #d17325;
+}
+ul li:hover:nth-child(2) a:after {
+  background: #b15b15;
+}
+ul li:hover:nth-child(3) a {
+  background: #0088cc;
+}
+
+ul li:hover:nth-child(3) a:before {
+  background: #2c80aa;
+}
+ul li:hover:nth-child(3) a:after {
+  background: #0070a8;
+}
+
+ul li:hover:nth-child(4) a {
+  background: linear-gradient(#400080, transparent),
+    linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+
+ul li:hover:nth-child(4) a:before {
+  background: linear-gradient(#400080, transparent),
+    linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+}
+ul li:hover:nth-child(4) a:after {
+  background: linear-gradient(#ffff00, transparent),
+    linear-gradient(-220deg, #ff0000, #400080);
+}
+ul li:hover:nth-child(5) i {
+  color: #ff0000;
+}
+ul li:hover:nth-child(5) a {
+  background-image: linear-gradient(#fff,#fff);
+  color: #ff0000;
+}
+ul li:hover:nth-child(5) a:before {
+  background-color: #fff;
+}
+ul li:hover:nth-child(5) a:after {
+  background-color: rgb(224, 224, 224);
+}
+ul li:hover:nth-child(6) a {
+  background: #55acee;
+}
+ul li:hover:nth-child(6) a:before {
+  background: #4d9fde;
+}
+ul li:hover:nth-child(6) a:after {
+  background: #4184b7;
+}
+
+ul li:hover:nth-child(7) a {
+  background: #3b6cd6;
+  color: rgb(red, green, blue);
+}
+
+ul li:hover:nth-child(7) a:before {
+  background: #4a69ad;
+  background-image: linear-gradient(#2e4a86);
+}
+ul li:hover:nth-child(7) a:after {
+  background: #2e4a86;
+}
